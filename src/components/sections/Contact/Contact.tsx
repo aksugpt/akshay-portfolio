@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import {
   Mail,
   GitBranch,
@@ -14,29 +14,75 @@ import { Container, SectionHeading, Card, Tag, Badge } from '@/components/ui';
 import { contactData } from '@/data/contact';
 
 /* ─── Animation Variants ─────────────────────────────────────────────────── */
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.12, delayChildren: 0.1 } },
+/* ─── Animation Variants ─────────────────────────────────────────────────── */
+
+const containerVariants: Variants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.12,
+      delayChildren: 0.1,
+    },
+  },
 };
 
-const fromLeft = {
-  hidden: { opacity: 0, x: -30 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+const fromLeft: Variants = {
+  hidden: {
+    opacity: 0,
+    x: -30,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+    },
+  },
 };
 
-const fromRight = {
-  hidden: { opacity: 0, x: 30 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+const fromRight: Variants = {
+  hidden: {
+    opacity: 0,
+    x: 30,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+    },
+  },
 };
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
 };
 
-const tagVariants = {
-  hidden: { opacity: 0, scale: 0.85 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3, ease: 'easeOut' } },
+const tagVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    scale: 0.85,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.3,
+    },
+  },
 };
 
 /* ─── Sub-components ─────────────────────────────────────────────────────── */
@@ -115,8 +161,8 @@ function ActionButton({
     >
       <div
         className={`p-2 rounded-lg shrink-0 ${isPrimary
-            ? 'bg-white/20'
-            : 'bg-[var(--color-primary-bg)] border border-[var(--color-border)]'
+          ? 'bg-white/20'
+          : 'bg-[var(--color-primary-bg)] border border-[var(--color-border)]'
           }`}
       >
         <Icon className="w-5 h-5" />
