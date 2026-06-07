@@ -1,3 +1,57 @@
+# Akshay Gupta Portfolio
+
+Personal portfolio website showcasing my academic journey, projects, research interests, achievements, and technical skills.
+
+## About Me
+
+M.Tech Student in Data & Computational Science at IIT Jodhpur.
+
+Interests:
+- Generative AI
+- Retrieval-Augmented Generation (RAG)
+- Agentic AI Systems
+- Machine Learning
+- Deep Learning
+- Full-Stack Development
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+
+## Highlights
+
+- Published Patent:
+  - Autonomous Dual-Band System for Selective Drone Detection and Immobilization via Wi-Fi Deauthentication
+  - Application No: 202511038869 A
+
+- 3rd Place – Neuro Robotics Hackathon 2026
+  - IIT Jodhpur
+
+## Projects
+
+- Intelligent TA Assignment & Recommendation Platform (Ongoing)
+- RAG-Based Question Answering System (Learning Project)
+- Automated Drone/Device Immobilization System (Patent Work)
+- NPL Website Development
+- Association of Pharmaceutical Producers of Nepal Portal
+
+## Connect
+
+- LinkedIn: https://www.linkedin.com/in/akshay-gupta-a16201164/
+- GitHub: https://github.com/aksugpt
+
+## Live Portfolio
+
+Coming Soon
+
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
