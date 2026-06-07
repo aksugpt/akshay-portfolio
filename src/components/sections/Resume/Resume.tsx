@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Download, ExternalLink, Sparkles, Briefcase, Code2, BrainCircuit } from 'lucide-react';
+import { Sparkles, Briefcase, Code2, BrainCircuit } from 'lucide-react';
 import { Container, SectionHeading, Card, Button, Tag } from '@/components/ui';
 import { resumeData } from '@/data/resume';
 
@@ -17,15 +17,15 @@ export function Resume() {
   return (
     <section id="resume" className="py-20 md:py-28 border-b border-[var(--color-border)] last:border-b-0 bg-[var(--color-surface-bg)]/30">
       <Container>
-        <SectionHeading 
-          title="Resume & Overview" 
+        <SectionHeading
+          title="Resume & Overview"
           subtitle="A quick snapshot of my professional journey, skills, and technical background."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mt-12">
-          
+
           {/* Left Column: Summary & Actions */}
-          <motion.div 
+          <motion.div
             className="lg:col-span-5 flex flex-col justify-center"
             variants={containerVariants}
             initial="hidden"
@@ -35,7 +35,7 @@ export function Resume() {
             <motion.p variants={itemVariants} className="text-[var(--color-text-secondary)] text-lg leading-relaxed mb-8">
               {resumeData.summary}
             </motion.p>
-            
+
             <motion.div variants={itemVariants} className="mb-10">
               <h3 className="text-[var(--color-text-primary)] font-bold text-xl mb-4">Quick Highlights</h3>
               <ul className="space-y-3">
@@ -55,7 +55,7 @@ export function Resume() {
           </motion.div>
 
           {/* Right Column: Resume Preview Card */}
-          <motion.div 
+          <motion.div
             className="lg:col-span-7"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -63,12 +63,12 @@ export function Resume() {
             viewport={{ once: true, margin: "-100px" }}
           >
             <Card className="h-full p-8 md:p-10 border-[var(--color-border)] bg-[var(--color-primary-bg)] shadow-2xl relative overflow-hidden" hover={false}>
-              
+
               {/* Decorative top bar mimicking a document */}
               <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-[var(--color-accent)] to-purple-500" />
-              
+
               <div className="space-y-10 pt-2">
-                
+
                 {/* Experience Preview */}
                 <div>
                   <div className="flex items-center gap-2 mb-6">
@@ -119,7 +119,7 @@ export function Resume() {
               </div>
             </Card>
           </motion.div>
-          
+
         </div>
       </Container>
     </section>
