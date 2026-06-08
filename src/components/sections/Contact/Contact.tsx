@@ -356,7 +356,7 @@ export function Contact() {
                     icon={MapPin}
                     label="Location"
                     value={contactData.location}
-                    href={`https://maps.google.com/?q=${encodeURIComponent(contactData.location)}`}
+                    href="https://maps.google.com/?q=Indian+Institute+of+Technology+Jodhpur"
                     iconColor="text-emerald-400"
                   />
                 </div>

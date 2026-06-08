@@ -15,7 +15,7 @@ export const contactData: ContactData = {
   githubHandle: 'aksugpt',
   linkedin: 'https://www.linkedin.com/in/akshay-gupta-a16201164/',
   linkedinHandle: 'akshay-gupta-a16201164',
-  location: 'Jodhpur, Rajasthan, India',
+  location: 'IIT Jodhpur Campus, Jodhpur, Rajasthan, India',
 
   // Legacy fields (kept for compatibility)
   availability: 'open',
