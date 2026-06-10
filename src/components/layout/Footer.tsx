@@ -1,5 +1,5 @@
 import { contactData } from '@/data/contact';
-import * as LucideIcons from 'lucide-react';
+import { Briefcase, Code, Mail } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,22 +16,35 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="flex gap-4">
-          {contactData.socials.map((social, idx) => {
-            const IconComponent = (LucideIcons as any)[social.iconName];
-            return (
-              <a
-                key={idx}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors p-2"
-                aria-label={social.label}
-              >
-                {IconComponent ? <IconComponent size={20} /> : social.label}
-              </a>
-            );
-          })}
+        <div className="flex flex-wrap justify-center items-center gap-6">
+          <a
+            href={contactData.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors py-2"
+            aria-label="LinkedIn"
+          >
+            <Briefcase size={20} />
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href={contactData.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors py-2"
+            aria-label="GitHub"
+          >
+            <Code size={20} />
+            <span>GitHub</span>
+          </a>
+          <a
+            href={`mailto:${contactData.email}`}
+            className="flex items-center gap-2 text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors py-2"
+            aria-label="Email"
+          >
+            <Mail size={20} />
+            <span>Email</span>
+          </a>
         </div>
       </div>
     </footer>
